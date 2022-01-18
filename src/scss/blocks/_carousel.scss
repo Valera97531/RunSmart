@@ -1,0 +1,31 @@
+.carousel {
+	padding: 82px 0;
+	position: relative;
+	&__item {
+		outline: none;
+		img {
+			margin: 0 auto;
+		}
+	}
+	.slick-next, .slick-prev {
+		outline: none;
+		border: none;
+		background-color: transparent;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 10;
+	}
+	.slick-next {
+		right: -66px;
+	}
+	.slick-next:before {
+		content: url(../img/icons/arrow-right.png);
+	}
+	.slick-prev {
+		left: -66px;
+	}
+	.slick-prev:before {
+		content: url(../img/icons/arrow-left.png);
+	}
+}

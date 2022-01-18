@@ -1,0 +1,51 @@
+@import 'libs/normalize';
+@import 'libs/animate';
+@import 'libs/slick';
+
+@import 'base/mixins';
+@import 'base/variables';
+@import 'base/animate';
+
+@mixin font($font_name, $file_name, $weight, $style) {
+
+	@font-face {
+	font-family: $font_name;
+	font-display: swap;
+	src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+	font-weight: #{$weight};
+	font-style: #{$style};
+	}
+}
+
+@import 'fonts';
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0
+}
+body {
+	font-family: 'Museo Sans', sans-serif;
+}
+.container {
+	max-width: 980px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/advantages';
+@import 'blocks/consultation';
+@import 'blocks/forms';
+@import 'blocks/carousel';
+@import 'blocks/catalog';
+@import 'blocks/reviews';
+@import 'blocks/footer';
+@import 'blocks/modal';
+@import 'blocks/pageup';
+@import 'media';
+
